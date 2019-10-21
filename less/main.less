@@ -1,7 +1,3 @@
-section {
-    // padding: 2em;
-}
-
 .hero{
     height: 60vh;
     background-image: url('/assets/images/tyler-nix-bbw55-xjeJo-unsplash.jpg');
@@ -10,7 +6,7 @@ section {
     background-repeat: no-repeat;
 
     @media @tablet{
-        height: 80vh;
+        height: 90vh;
         background-position: top right;
     }
 
@@ -54,10 +50,7 @@ section {
         }
         
         button{
-            background-color: @green;
-            border-color: @green;
-            color: @navLinkColor;
-            padding: .25rem 1rem;
+            .btnStyles;
         }
     }
     
@@ -72,7 +65,7 @@ section {
     }
 
     .howContainer {
-        display: flex;
+        display: none;
         flex-direction: column;
     
         .cards{
@@ -92,4 +85,160 @@ section {
         
     }
 
+}
+
+.findLocation {
+    padding: 4rem 0;
+
+    .findContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        
+        width: 100%;
+        margin: 0 auto;
+        
+        @media @tablet{
+            width: 88%;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        div {
+            width: 85%;
+            text-align: center;
+
+            img{                
+                width: 70%;
+            }
+        }       
+    }
+    
+    button{
+        .btnStyles;
+    }
+}
+
+.listLocation {
+    width: 100%;
+    margin: 8rem auto; 
+    display: flex;
+    flex-direction: column;
+
+    @media @desktop{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div{
+        width: 100%;
+        height: 40vh;
+        color: @txtColor;
+
+        @media @desktop{
+            width: 50%;
+            height: autovh;
+        }
+
+        button {
+            .btnStyles(@bg-color: @orange);
+        }
+    }
+
+    .one{
+        background-image: url('/assets/images/sergei-akulich-ZNkvxIPPVeE-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 1.8rem;
+        display: none;
+        padding: 2rem 2rem;
+        
+        color: @dark;
+
+        @media @tablet{
+            display: block;
+        }
+        @media @desktop{display: block; height: auto;}
+    }
+
+    .two{
+        padding: 3rem;
+        background-color: @orange;
+        
+
+        background-image: url('/assets/images/sergei-akulich-ZNkvxIPPVeE-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h2 {
+            width: 65%;
+            font-size: 18px;
+            margin-bottom: 1rem;
+            color: @dark;
+        }
+
+        @media @tablet{
+            background-image: none;
+            padding: 6rem 8rem;
+            
+
+            h2{
+                width: 100%;
+                font-size: 3.2rem;
+                color: @txtColor;
+            }
+
+            button {
+                display: none;    
+                
+            }
+        }
+        
+    }
+}
+
+.mobileApp {
+    display: flex;
+    margin: 6rem auto;
+
+    @media @tablet {
+        justify-content: space-around;
+    }
+
+    div {
+        
+    }
+
+    .searchText{
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            width: 100%;
+        }
+
+        p{
+            margin: 1rem 0;
+        }
+
+        .storeLinks {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media @tablet {
+            width: 50%;
+        }
+    }
+
+    .phoneGraphic {
+        display: none;
+
+        @media @tablet {
+            display: block;
+        }
+    }
 }

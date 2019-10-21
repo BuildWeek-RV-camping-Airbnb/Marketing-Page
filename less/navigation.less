@@ -41,6 +41,7 @@ div.header{
             justify-content: flex-end;
             align-items: stretch;
             padding-right: 1em;
+            width: 65%;
             
             @media @tablet{
                 padding:0;
@@ -53,16 +54,27 @@ div.header{
                 color: @navLinkColor;
                 text-decoration: none;
                 font-size: 1.4rem;
-                padding: 0 .75rem;
+                padding: 0 1rem;
+                margin-right: 1rem;
         
                 &:hover {
-                    color: @blue;
-                    border-bottom: 2px solid @dark;
+                    color: @dark;
+                    border-bottom: .4rem solid @dark;
+                    cursor: pointer;
                 }
-        
-                @media @tablet{
-                    padding: 0 .75rem;
-                    // margin-right: 1em;
+            }
+
+            a:last-child{
+                border: none;
+                align-self: center;
+                padding: 1rem;
+                color: @txtColor;
+                background-color: @green;
+                margin-right: 0;
+
+                &:hover{
+                    background-color: @dark;
+
                 }
             }
         }
