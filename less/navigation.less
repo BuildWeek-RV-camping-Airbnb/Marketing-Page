@@ -1,0 +1,87 @@
+// .mdc-top-app-bar {
+//     background-color: @orange;
+
+    //.mdc-top-app-bar__logo{
+    //     width: auto;
+    //     height: 30px;
+    //     margin-right: 1rem;
+    // }
+
+    //.mdc-topp-app-bar__title{
+    //     font-family: @salsaFont;
+    //     font-size: 2.4rem;
+    // }
+// }
+
+
+section.header{
+    background-color: @orange;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+                
+        @media @tablet{
+            width: 88%;
+            margin: 0 auto;
+        }
+
+        .logo{
+            padding: 1rem 1rem;
+    
+            @media @tablet{
+                padding: 1rem 2rem;
+            }
+    
+            img{
+                width: auto;
+                height: 3rem;
+                margin-right: 1rem;
+            }
+    
+            .title{
+                font-family: @salsaFont;
+                font-size: 2.4rem;
+                color: @navLinkColor;
+                position: relative;
+                top: -.5rem;
+            }
+        }
+     
+    
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            align-items: stretch;
+            padding-right: 1em;
+            
+            @media @tablet{
+                padding:0;
+                width: 55%;
+            }
+    
+            a{
+                display: flex;
+                align-items: center;
+                color: @navLinkColor;
+                text-decoration: none;
+                font-size: 1.4rem;
+                padding: 0 .75rem;
+        
+                &:hover {
+                    color: @blue;
+                    border-bottom: 2px solid @dark;
+                }
+        
+                @media @tablet{
+                    padding: 0 .75rem;
+                    // margin-right: 1em;
+                }
+            }
+        }
+    }
+
+}
