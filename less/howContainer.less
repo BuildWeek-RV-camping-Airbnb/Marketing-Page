@@ -1,0 +1,20 @@
+.howContainer {
+    display: flex;
+    flex-direction: column;
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        @media @tablet{
+            margin: 0 auto;
+            width: 88%;
+        }
+
+        .mdc-card{
+            width: 30%;
+        }
+    }
+    
+}

@@ -6,8 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>RVnB</title>
 
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.2.0/material-components-web.min.css" integrity="sha256-meCIrcSmZOI36GjD4uIA3wP8yl/jg8KBgpL4B3bv5Dk=" crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.2.0/material-components-web.min.js" integrity="sha256-cjDSRjLK6fmoV17j5OF+xYbz+K4SQqft2QVGtnVTvv8=" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.2.0/material-components-web.min.css" integrity="sha256-meCIrcSmZOI36GjD4uIA3wP8yl/jg8KBgpL4B3bv5Dk=" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.2.0/material-components-web.min.js" integrity="sha256-cjDSRjLK6fmoV17j5OF+xYbz+K4SQqft2QVGtnVTvv8=" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto|Salsa&display=swap">
         
@@ -15,7 +15,7 @@
 
     </head>
     <body>
-        <section class="header">
+        <div class="header">
             <header>
                 <div class="logo">
                     <img src="assets/icons/LogoIcon.svg" alt="RVnB Logo - a small pull-behind camper" />
@@ -24,14 +24,36 @@
                 <nav>
                     <a href="#">Home</a>
                     <a href="#">About</a>
-                    <a href="#">Sign Up</a>
                     <a href="#">Sign In</a>
+                    <a href="#" class="signUp">Sign Up</a>
                 </nav>
             </header>
-        </section>
+        </div>
 
         <section class="hero">
-            
+            <div class="bgFilter">
+                <div class="container">
+                    <div class="message">
+                        <h1>Finally land your RV where it belongs</h1>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="howContainer">
+                <h1>How Does it work?</h1>
+                <div class="cards">
+                    <div class="mdc-card">
+                        One
+                    </div>
+                    <div class="mdc-card">
+                        Two
+                    </div>
+                    <div class="mdc-card">
+                        Three
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>

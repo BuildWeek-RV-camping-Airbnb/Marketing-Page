@@ -1,0 +1,95 @@
+section {
+    // padding: 2em;
+}
+
+.hero{
+    height: 60vh;
+    background-image: url('/assets/images/tyler-nix-bbw55-xjeJo-unsplash.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @media @tablet{
+        height: 80vh;
+        background-position: top right;
+    }
+
+    @media @desktop{
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .bgFilter{
+        height: 100%;
+        width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.55) 9%, rgba(255,255,255,0) 70%);
+        padding: 2em;
+
+        .container{
+
+            @media @tablet{
+                width: 88%;
+                margin: 0 auto;
+            }
+        }
+
+        .message{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-content: center;
+            width: 85%;
+            margin-top: 10%;
+
+            @media @tablet{
+                margin-left: 10%;
+                width: 75%;
+            }
+
+            @media @desktop{
+                margin-left: 5%;
+                width: 45%;
+            }
+        }
+        
+        button{
+            background-color: @green;
+            border-color: @green;
+            color: @navLinkColor;
+            padding: .25rem 1rem;
+        }
+    }
+    
+    h1{
+        font-size: 4.8rem;
+        color: @navLinkColor;
+
+        @media @tablet {
+            font-size: 4.8rem;
+            line-height: 1.125;
+        }
+    }
+
+    .howContainer {
+        display: flex;
+        flex-direction: column;
+    
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+    
+            @media @tablet{
+                margin: 0 auto;
+                width: 88%;
+            }
+    
+            .mdc-card{
+                width: 30%;
+            }
+        }
+        
+    }
+
+}
