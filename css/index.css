@@ -636,6 +636,11 @@ div.header header nav a:last-child:hover {
   width: 35%;
   margin-right: 2rem;
 }
+@media (min-width: 801px) {
+  .mobileApp .searchText .storeLinks img {
+    width: auto;
+  }
+}
 .mobileApp .phoneGraphic {
   display: none;
   text-align: center;
@@ -652,7 +657,7 @@ div.header header nav a:last-child:hover {
 }
 @media (min-width: 801px) {
   .mobileApp .phoneGraphic img {
-    width: 65%;
+    width: 85%;
     text-align: center;
     align-content: center;
   }
