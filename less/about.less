@@ -4,20 +4,15 @@
 
 
 
-
-
-
-
-
 .container-top{
     position: relative;
 
     .bg-image {
         background: black;
-
+        
         img {
             width: 100%;
-            height: 30%;
+            height: 20%;
             filter: opacity(.45);
         }//ends img
     }//ends bg-image
@@ -26,16 +21,14 @@
         height: 124px;
         width: 639px;
         background-color: #FFFFFF;
-        border: 1px red solid;
-        position:absolute;
-        right: 0;
-        bottom: -100px;
+        //border: 1px red solid;
+        position: absolute;
+        right: 60px;
+        bottom: -50px;
 
         h1 {
-            margin: 0 auto;
-            font-size: 6.4rem;
-            color: #373737;
-            font-weight: 500;
+            color: @dark;
+            text-align: center;
             
         }//ends h1
 
@@ -46,14 +39,49 @@
 
 
 .container-middle {
-    .mission{
-        p{
+    
 
+    .mission{
+        width: 75%;
+        border: 1px solid orange;
+        padding: 75px;
+        h3 {
+            color: @lightFont;
+            font-size: 2.4rem;
+            padding-bottom: 40px;            
+        }
+        h2 {
+            padding: 20px 0;
+        }
+        p {
+            font-size: 1.8rem;
+            color: @dark;
         }//ends p
 
     }//ends mission
+}//ends container middle
 
+
+.team{
+    h2 {
+    font-size: 4.8rem;
+    padding: 40px;
+    }//ends h2
+}//ends team
+
+
+.container-bottom {
+    
+    .teampics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: 0 auto;
+   
     .bubbles { 
+        padding: 30px;
+
         img {
             height: 125px;
             width: 125px;
@@ -61,27 +89,32 @@
         }//ends img
 
         img:hover {
-            border: 2px solid #1089ff;
+            border: 2px solid @hoverColor;
         }//ends img hover
         h2 {
             font-size: 1.8rem;
             color: black;
+            text-align: center;
+            padding-top: 20px;
         }//ends h2
 
         h2:hover {
             text-decoration: underline;
-            text-decoration-color: #1089ff;
+            text-decoration-color: @hoverColor;
         }
-        
+
         p {
             font-size: 1.4rem;
-            color: #C4C4C4;
+            color: @lightFont;
+            text-align: center;
+            padding-top: 5px;
         }//ends p
 
         p:hover {
             text-decoration: underline;
-            text-decoration-color: #1089ff;
+            text-decoration-color: @hoverColor;
         }
 
     }//ends bubbles
-}//ends container
+}//ends teampics
+}//ends container bottom
