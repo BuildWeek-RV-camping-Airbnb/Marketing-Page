@@ -202,18 +202,24 @@
 
 .mobileApp {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     margin: 6rem auto;
+    width: 100%;
 
     @media @tablet {
         justify-content: space-around;
     }
 
     div {
-        
+        width: 100%;
+
+        @media @tablet{width: 50%;}
     }
 
     .searchText{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
 
         h2 {
@@ -221,7 +227,9 @@
         }
 
         p{
-            margin: 1rem 0;
+            margin: 3rem 0;
+            width: 80%;
+            font-size: 1.8rem;
         }
 
         .storeLinks {
@@ -239,6 +247,11 @@
 
         @media @tablet {
             display: block;
+        }
+
+        img{
+            width: 50%;
+            height: auto;
         }
     }
 }
