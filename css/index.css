@@ -519,3 +519,53 @@ footer .footerContainer nav a {
 footer .footerContainer .copyright {
   text-align: center;
 }
+.container-top {
+  position: relative;
+}
+.container-top .bg-image {
+  background: black;
+}
+.container-top .bg-image img {
+  width: 100%;
+  height: 30%;
+  filter: opacity(0.45);
+}
+.container-top .about {
+  height: 124px;
+  width: 639px;
+  background-color: #FFFFFF;
+  border: 1px red solid;
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+.container-top .about h1 {
+  margin: 0 auto;
+  font-size: 6.4rem;
+  color: #373737;
+  font-weight: 500;
+}
+.container-middle .bubbles img {
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
+}
+.container-middle .bubbles img:hover {
+  border: 2px solid #1089ff;
+}
+.container-middle .bubbles h2 {
+  font-size: 1.8rem;
+  color: black;
+}
+.container-middle .bubbles h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #1089ff;
+}
+.container-middle .bubbles p {
+  font-size: 1.4rem;
+  color: #C4C4C4;
+}
+.container-middle .bubbles p:hover {
+  text-decoration: underline;
+  text-decoration-color: #1089ff;
+}
