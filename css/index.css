@@ -206,12 +206,12 @@ div.header header nav a:last-child {
   border: none;
   align-self: center;
   padding: 1rem;
-  color: #ffffff;
-  background-color: #56A662;
+  color: white;
+  background-color: #f29122;
   margin-right: 0;
 }
 div.header header nav a:last-child:hover {
-  background-color: #373737;
+  background-color: #56A662;
 }
 .hero {
   height: 60vh;
@@ -444,6 +444,11 @@ div.header header nav a:last-child:hover {
     width: 75%;
   }
 }
+@media (min-width: 801px) {
+  .findLocation .findContainer div h2 {
+    font-size: 4rem;
+  }
+}
 .findLocation .findContainer div p {
   font-size: 1.6rem;
   line-height: 1.5;
@@ -570,6 +575,11 @@ div.header header nav a:last-child:hover {
     justify-content: space-between;
   }
 }
+@media (min-width: 801px) {
+  .mobileApp {
+    justify-content: space-evenly;
+  }
+}
 .mobileApp div {
   align-self: center;
 }
@@ -592,10 +602,20 @@ div.header header nav a:last-child:hover {
     margin-bottom: 1rem;
   }
 }
+@media (min-width: 801px) {
+  .mobileApp .searchText h2 {
+    font-size: 4rem;
+  }
+}
 .mobileApp .searchText p {
   margin: 2rem 0;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+@media (min-width: 801px) {
+  .mobileApp .searchText p {
+    width: 65%;
+  }
 }
 .mobileApp .searchText .storeLinks {
   display: flex;
@@ -618,6 +638,7 @@ div.header header nav a:last-child:hover {
 }
 .mobileApp .phoneGraphic {
   display: none;
+  text-align: center;
 }
 @media (min-width: 501px) {
   .mobileApp .phoneGraphic {
@@ -628,6 +649,13 @@ div.header header nav a:last-child:hover {
 .mobileApp .phoneGraphic img {
   width: 100%;
   height: auto;
+}
+@media (min-width: 801px) {
+  .mobileApp .phoneGraphic img {
+    width: 65%;
+    text-align: center;
+    align-content: center;
+  }
 }
 footer {
   background-color: #56A662;

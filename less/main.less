@@ -216,6 +216,9 @@
                     font-size: 2.4rem;
                     width: 75%;
                 }
+                @media @desktop{
+                    font-size: 4rem;
+                }
             }
 
             p{
@@ -330,6 +333,10 @@
         
     }
 
+    @media @desktop{
+        justify-content: space-evenly;
+    }
+
     div {
         align-self: center;
     }
@@ -350,12 +357,20 @@
                 font-size: 2.4rem;
                 margin-bottom: 1rem;
             }
+
+            @media @desktop {
+                font-size: 4rem;
+            }
         }
 
         p{
             margin: 2rem 0;
             font-size: 1.6rem;
             line-height: 1.5;
+
+            @media @desktop{
+                width: 65%;
+            }
         }
 
         .storeLinks {
@@ -380,6 +395,7 @@
 
     .phoneGraphic {
         display: none;
+        text-align: center;
 
         @media @tablet {
             display: block;
@@ -389,6 +405,12 @@
         img{
             width: 100%;
             height: auto;
+
+            @media @desktop{
+                width: 65%;
+                text-align: center;
+                align-content: center;
+            }
         }
     }
 }
