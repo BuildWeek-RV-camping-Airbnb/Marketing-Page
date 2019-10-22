@@ -133,8 +133,12 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', normal;
   font-size: 1.8rem;
+}
+h1 {
+  font-size: 6.4rem;
+  font-weight: 500;
 }
 h2 {
   font-size: 3.8rem;
@@ -699,4 +703,86 @@ footer .footerContainer nav a {
 }
 footer .footerContainer .copyright {
   text-align: center;
+}
+.container-top {
+  position: relative;
+}
+.container-top .bg-image {
+  background: black;
+}
+.container-top .bg-image img {
+  width: 100%;
+  height: 20%;
+  filter: opacity(0.45);
+}
+.container-top .about {
+  height: 124px;
+  width: 639px;
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 60px;
+  bottom: -50px;
+}
+.container-top .about h1 {
+  color: #373737;
+  text-align: center;
+}
+.container-middle .mission {
+  width: 75%;
+  border: 1px solid orange;
+  padding: 75px;
+}
+.container-middle .mission h3 {
+  color: #C4C4C4;
+  font-size: 2.4rem;
+  padding-bottom: 40px;
+}
+.container-middle .mission h2 {
+  padding: 20px 0;
+}
+.container-middle .mission p {
+  font-size: 1.8rem;
+  color: #373737;
+}
+.team h2 {
+  font-size: 4.8rem;
+  padding: 40px;
+}
+.container-bottom .teampics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+}
+.container-bottom .teampics .bubbles {
+  padding: 30px;
+}
+.container-bottom .teampics .bubbles img {
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
+}
+.container-bottom .teampics .bubbles img:hover {
+  border: 2px solid #1089ff;
+}
+.container-bottom .teampics .bubbles h2 {
+  font-size: 1.8rem;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+}
+.container-bottom .teampics .bubbles h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #1089ff;
+}
+.container-bottom .teampics .bubbles p {
+  font-size: 1.4rem;
+  color: #C4C4C4;
+  text-align: center;
+  padding-top: 5px;
+}
+.container-bottom .teampics .bubbles p:hover {
+  text-decoration: underline;
+  text-decoration-color: #1089ff;
 }
