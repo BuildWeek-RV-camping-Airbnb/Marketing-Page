@@ -167,7 +167,7 @@
 }
 
 .findLocation {
-    padding: 0 0 4rem;
+    padding: 4rem 0;
 
     @media @tablet {
         width: 88%;
@@ -215,6 +215,9 @@
                     margin-bottom: 1rem;
                     font-size: 2.4rem;
                     width: 75%;
+                }
+                @media @desktop{
+                    font-size: 4rem;
                 }
             }
 
@@ -322,12 +325,16 @@
 .mobileApp {
     display: flex;
     justify-content: space-evenly;
-    
+    padding: 4rem 0 8rem;
     @media @tablet {
         width: 88%;
         margin: 0 auto;
         justify-content: space-between;
         
+    }
+
+    @media @desktop{
+        justify-content: space-evenly;
     }
 
     div {
@@ -350,12 +357,20 @@
                 font-size: 2.4rem;
                 margin-bottom: 1rem;
             }
+
+            @media @desktop {
+                font-size: 4rem;
+            }
         }
 
         p{
             margin: 2rem 0;
             font-size: 1.6rem;
             line-height: 1.5;
+
+            @media @desktop{
+                width: 65%;
+            }
         }
 
         .storeLinks {
@@ -374,12 +389,17 @@
             img{
                 width: 35%;
                 margin-right: 2rem;
+
+                @media @desktop{
+                    width: auto;
+                }
             }
         }
     }
 
     .phoneGraphic {
         display: none;
+        text-align: center;
 
         @media @tablet {
             display: block;
@@ -389,6 +409,12 @@
         img{
             width: 100%;
             height: auto;
+
+            @media @desktop{
+                width: 85%;
+                text-align: center;
+                align-content: center;
+            }
         }
     }
 }
