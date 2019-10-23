@@ -1,6 +1,5 @@
 
 
-
 .container-top{
     position: relative;
     height: 75vh;
@@ -10,28 +9,49 @@
     background-position: center center;
     display: flex;
 
+    @media @phone {
+        .measurements(60vh, 100%);        
+    }   
+   
     .bg-image {
         background-color: rgba(0, 0, 0, 0.4);
-        height: 100%;
-        width: 100%;        
+        .measurements(100%, 100%);
+        
+      @media @phone {
+          .measurements(60vh, 100%);
+        }                 
     }//ends bg-image
 
     .about {
-        padding: 4%;
-        background-color: #FFFFFF;
-        // border: 1px red solid;
+        padding: 2% 15%;
+        background-color: #FFFFFF;        
         position: absolute;
         right: 5%;
-        bottom: -2%;
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
-        align-items: center;
+        bottom: -6%;
+        
+        @media @tab {
+            bottom: -2%;
+        }
+
+        @media @phone {
+            bottom: 0;
+            font-size: 3.8rem;
+            right: 29%;
+            padding: 2% 10%;
+        }
 
         h1 {
             color: @dark;
             text-align: center; 
-            padding-top: 2%;           
+            padding-top: 1%;  
+
+            @media @tab {
+            font-size: 5.2rem;
+            }
+
+            @media @phone {
+                font-size: 4rem;
+            }                    
         }//ends h1
     }//ends about
 }//ends container
@@ -41,11 +61,14 @@
 
 .container-middle {
     
-
     .mission{
-        width: 70%;
+        width: 70vw;
         // border: 1px solid orange;
         padding: 3%;
+
+        @media @phone {
+            width: 100%;
+        }
         h3 {
             color: @lightFont;
             font-size: 2.4rem;
@@ -56,21 +79,24 @@
         }
         p {
             font-size: 1.8rem;
-            color: @dark;
+            color: @dark;            
         }//ends p
     }//ends mission
 }//ends container middle
 
 
 .team{
-    h2 {
-    font-size: 4.8rem;
-    padding: 3%;
 
     @media @tab {
-        align-text: center;
+        padding: 4% 35%;
     }
 
+    @media @phone {
+        padding: 4% 25%;
+    }
+    h2 {
+    font-size: 4.8rem;
+    padding: 3%;  
     }//ends h2
 }//ends team
 
@@ -84,42 +110,43 @@
         width: 70%;
         margin: 0 auto;
    
-    .bubbles { 
-        padding: 3%;
+      @media @phone{
+          justify-content: space-evenly;
+      }
+        
+        .bubbles { 
+            padding: 3%;
 
-        img {
-            height: 125px;
-            width: 125px;
-            border-radius: 100%;
-        }//ends img
+            img {
+                .measurements(125px, 125px);                
+                border-radius: 100%;
+            }//ends img
 
-        img:hover {
-            border: 2px solid @hoverColor;
-        }//ends img hover
-        h2 {
-            font-size: 1.8rem;
-            color: black;
-            text-align: center;
-            padding-top: 3%;
-        }//ends h2
+            img:hover {
+                border: 2px solid @hoverColor;
+            }//ends img hover
+            h2 {
+                font-size: 1.8rem;
+                color: black;
+                text-align: center;
+                padding-top: 3%;
+            }//ends h2
 
-        h2:hover {
-            text-decoration: underline;
-            text-decoration-color: @hoverColor;
-        }
+            h2:hover {
+                .decoration(underline, @hoverColor);              
+            }
 
-        p {
-            font-size: 1.4rem;
-            color: @lightFont;
-            text-align: center;
-            padding-top: 3%;
-        }//ends p
+            p {
+                font-size: 1.4rem;
+                color: @lightFont;
+                text-align: center;
+                padding-top: 3%;
+            }//ends p
 
-        p:hover {
-            text-decoration: underline;
-            text-decoration-color: @hoverColor;
-        }
+            p:hover {
+                .decoration(underline, @hoverColor);
+            }
 
-    }//ends bubbles
-}//ends teampics
+        }//ends bubbles
+    }//ends teampics
 }//ends container bottom
