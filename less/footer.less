@@ -1,7 +1,7 @@
 footer {
     background-color: @green;
     margin-top: 2rem;
-    padding: 2rem 6rem;
+    padding: 2rem;
     color: @txtColor;
     font-size: 1.1rem;
 
@@ -13,7 +13,18 @@ footer {
         align-items: center;
         flex-wrap: wrap;
 
-        @media @tablet{}
+        @media @tablet{
+
+        }
+
+        @media @desktop{
+            width: 80%;
+        }
+
+        img.logo{
+            padding-right: 2rem;
+
+        }
 
         img.social{
             width: 3rem;
@@ -40,6 +51,12 @@ footer {
     
         .copyright{
             text-align: center;
+            padding: 1rem 0;
+            line-height: 1.5;
+            
+            a{
+                color: @navLinkColor;
+            }
         }
     }
 }
