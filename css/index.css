@@ -723,6 +723,10 @@ footer .footerContainer nav a {
 footer .footerContainer .copyright {
   text-align: center;
   padding: 1rem 0;
+  line-height: 1.5;
+}
+footer .footerContainer .copyright a {
+  color: white;
 }
 .container-top {
   position: relative;
