@@ -269,6 +269,11 @@ div.header header nav a:last-child:hover {
     width: 65%;
   }
 }
+@media (min-width: 801px) {
+  .hero .bgFilter .message h1 {
+    font-size: 5.4rem;
+  }
+}
 .hero .bgFilter button {
   background-color: #56A662;
   color: white;
@@ -427,7 +432,7 @@ div.header header nav a:last-child:hover {
   position: relative;
   display: inline-block;
   top: -2.5rem;
-  left: 80%;
+  left: 70%;
   color: white;
   background-color: #034AA6;
   padding: 1.5rem;
