@@ -518,7 +518,7 @@ div.header header nav a:last-child:hover {
   color: #F26E22;
 }
 .listLocation .one {
-  background-image: url('/assets/images/sergei-akulich-ZNkvxIPPVeE-unsplash.jpg');
+  background-image: url('/assets/images/blake-wisz-TcgASSD5G04-unsplash.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -546,7 +546,7 @@ div.header header nav a:last-child:hover {
 .listLocation .two {
   padding: 3rem;
   background-color: #F26E22;
-  background-image: url('/assets/images/sergei-akulich-ZNkvxIPPVeE-unsplash.jpg');
+  background-image: url('/assets/images/blake-wisz-TcgASSD5G04-unsplash.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -622,9 +622,11 @@ div.header header nav a:last-child:hover {
   }
 }
 .mobileApp .searchText p {
-  margin: 2rem 0;
   font-size: 1.6rem;
   line-height: 1.5;
+  padding: 2rem 0;
+  width: 85%;
+  margin: 2rem 0;
 }
 @media (min-width: 801px) {
   .mobileApp .searchText p {
