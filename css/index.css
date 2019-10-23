@@ -525,39 +525,46 @@ footer .footerContainer .copyright {
 }
 .container-top {
   position: relative;
+  height: 75vh;
+  background-image: url(../assets/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
 }
 .container-top .bg-image {
-  background: black;
-}
-.container-top .bg-image img {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
   width: 100%;
-  height: 20%;
-  filter: opacity(0.45);
 }
 .container-top .about {
-  height: 124px;
-  width: 639px;
+  height: 11%;
+  width: 30%;
   background-color: #FFFFFF;
   position: absolute;
-  right: 60px;
-  bottom: -50px;
+  right: 5%;
+  bottom: -2%;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
 }
 .container-top .about h1 {
   color: #373737;
   text-align: center;
+  padding-top: 2%;
 }
 .container-middle .mission {
-  width: 75%;
-  border: 1px solid orange;
-  padding: 75px;
+  width: 70%;
+  padding: 3%;
 }
 .container-middle .mission h3 {
   color: #C4C4C4;
   font-size: 2.4rem;
-  padding-bottom: 40px;
+  padding-bottom: 4%;
 }
 .container-middle .mission h2 {
-  padding: 20px 0;
+  padding: 3% 0;
 }
 .container-middle .mission p {
   font-size: 1.8rem;
@@ -565,17 +572,22 @@ footer .footerContainer .copyright {
 }
 .team h2 {
   font-size: 4.8rem;
-  padding: 40px;
+  padding: 3%;
+}
+@media (max-width: 800px) {
+  .team h2 {
+    align-text: center;
+  }
 }
 .container-bottom .teampics {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 70%;
   margin: 0 auto;
 }
 .container-bottom .teampics .bubbles {
-  padding: 30px;
+  padding: 3%;
 }
 .container-bottom .teampics .bubbles img {
   height: 125px;
@@ -589,7 +601,7 @@ footer .footerContainer .copyright {
   font-size: 1.8rem;
   color: black;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 3%;
 }
 .container-bottom .teampics .bubbles h2:hover {
   text-decoration: underline;
@@ -599,7 +611,7 @@ footer .footerContainer .copyright {
   font-size: 1.4rem;
   color: #C4C4C4;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 3%;
 }
 .container-bottom .teampics .bubbles p:hover {
   text-decoration: underline;

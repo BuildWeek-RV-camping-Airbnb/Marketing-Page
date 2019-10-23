@@ -1,37 +1,39 @@
 
 
 
-
-
-
 .container-top{
     position: relative;
+    height: 75vh;
+    background-image: url(../assets/images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
 
     .bg-image {
-        background: black;
-        
-        img {
-            width: 100%;
-            height: 20%;
-            filter: opacity(.45);
-        }//ends img
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;        
     }//ends bg-image
 
     .about {
-        height: 124px;
-        width: 639px;
+        height: 11%;
+        width: 30%;
         background-color: #FFFFFF;
-        //border: 1px red solid;
+        // border: 1px red solid;
         position: absolute;
-        right: 60px;
-        bottom: -50px;
+        right: 5%;
+        bottom: -2%;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        align-items: center;
 
         h1 {
             color: @dark;
-            text-align: center;
-            
+            text-align: center; 
+            padding-top: 2%;           
         }//ends h1
-
     }//ends about
 }//ends container
 
@@ -42,22 +44,21 @@
     
 
     .mission{
-        width: 75%;
-        border: 1px solid orange;
-        padding: 75px;
+        width: 70%;
+        // border: 1px solid orange;
+        padding: 3%;
         h3 {
             color: @lightFont;
             font-size: 2.4rem;
-            padding-bottom: 40px;            
+            padding-bottom: 4%;            
         }
         h2 {
-            padding: 20px 0;
+            padding: 3% 0;
         }
         p {
             font-size: 1.8rem;
             color: @dark;
         }//ends p
-
     }//ends mission
 }//ends container middle
 
@@ -65,7 +66,12 @@
 .team{
     h2 {
     font-size: 4.8rem;
-    padding: 40px;
+    padding: 3%;
+
+    @media @tab {
+        align-text: center;
+    }
+
     }//ends h2
 }//ends team
 
@@ -75,12 +81,12 @@
     .teampics {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         width: 70%;
         margin: 0 auto;
    
     .bubbles { 
-        padding: 30px;
+        padding: 3%;
 
         img {
             height: 125px;
@@ -95,7 +101,7 @@
             font-size: 1.8rem;
             color: black;
             text-align: center;
-            padding-top: 20px;
+            padding-top: 3%;
         }//ends h2
 
         h2:hover {
@@ -107,7 +113,7 @@
             font-size: 1.4rem;
             color: @lightFont;
             text-align: center;
-            padding-top: 5px;
+            padding-top: 3%;
         }//ends p
 
         p:hover {
