@@ -724,8 +724,7 @@ footer .footerContainer .copyright {
   width: 100%;
 }
 .container-top .about {
-  height: 11%;
-  width: 30%;
+  padding: 4%;
   background-color: #FFFFFF;
   position: absolute;
   right: 5%;
