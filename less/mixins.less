@@ -15,9 +15,14 @@
     }
 }
 
-.paragraphStyle(@font-size: 1.6rem, @line-height: 1.5, @padding: 2rem 0, @width: 85%){
-    font-size: @font-size;
-    line-height: @line-height;
-    padding: @padding;
+
+
+.measurements(@height, @width) {
+    height: @height;
     width: @width;
+}
+
+.decoration(@underline, @color) {
+    text-decoration: @underline;
+    text-decoration-color: @color;
 }
