@@ -456,6 +456,12 @@ div.header header nav a:last-child:hover {
 @media (min-width: 501px) {
   .findLocation .findContainer div img {
     width: 85%;
+    margin-left: 5rem;
+  }
+}
+@media (min-width: 801px) {
+  .findLocation .findContainer div img {
+    margin-left: 7rem;
   }
 }
 .findLocation .findContainer div .priceBox {
@@ -470,7 +476,12 @@ div.header header nav a:last-child:hover {
 @media (min-width: 501px) {
   .findLocation .findContainer div .priceBox {
     top: -2.5rem;
-    left: 75%;
+    left: 72%;
+  }
+}
+@media (min-width: 801px) {
+  .findLocation .findContainer div .priceBox {
+    left: 80%;
   }
 }
 .findLocation .findContainer div h2 {
@@ -607,18 +618,12 @@ div.header header nav a:last-child:hover {
 }
 .mobileApp {
   display: flex;
-  justify-content: space-evenly;
   padding: 4rem 0 8rem;
 }
 @media (min-width: 501px) {
   .mobileApp {
     width: 88%;
     margin: 0 auto;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 801px) {
-  .mobileApp {
     justify-content: space-evenly;
   }
 }
