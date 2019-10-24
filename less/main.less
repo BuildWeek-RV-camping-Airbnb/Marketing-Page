@@ -292,16 +292,24 @@
         padding: 2rem 2rem;
         color: @dark;
 
-        @media @tablet{
+        @media @tablet {
+            padding: 4rem 4rem;
             display: block;
+            height: auto;
+        }
 
-            p {
-                margin: 4rem auto;
+        @media @desktop {
+            padding: 4rem 4rem;
+        }
+
+        p{
+
+            @media @tablet {
                 color: white;
                 text-shadow: @txtShadow;
+                margin: 4rem auto;
             }
         }
-        @media @desktop{display: block; height: auto;}
     }
 
     .two{
