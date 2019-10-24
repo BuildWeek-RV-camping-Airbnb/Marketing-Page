@@ -7,7 +7,12 @@ div.header{
         justify-content: space-between;
         align-items: stretch;
         align-content: stretch;
-                
+    
+        @media @smaller {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
         @media @tablet{
             width: 88%;
             margin: 0 auto;
@@ -15,7 +20,11 @@ div.header{
 
         .logo{
             padding: 1rem 1rem;
-    
+
+            @media @smaller {
+                text-align: center;
+            }
+
             @media @tablet{
                 padding: 1rem 2rem;
             }
@@ -42,6 +51,12 @@ div.header{
             align-items: stretch;
             padding-right: 1em;
             width: 65%;
+
+            @media @smaller {
+                width: 95%;
+                justify-content: space-evenly;
+                padding: 0 0 1rem;
+            }
             
             @media @tablet{
                 padding:0;
