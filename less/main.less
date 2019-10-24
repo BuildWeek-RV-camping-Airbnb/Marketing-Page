@@ -181,7 +181,6 @@
         margin: 0 auto;
     }
 
-
     .findContainer{
         display: flex;
         flex-direction: column;
@@ -206,6 +205,11 @@
 
                 @media @tablet{
                     width: 85%;
+                    margin-left: 5rem;
+                }
+
+                @media @desktop{
+                    margin-left: 7rem;
                 }
             }
             
@@ -220,7 +224,11 @@
 
                 @media @tablet{
                     top: -2.5rem;
-                    left: 75%;
+                    left: 72%;
+                }
+
+                @media @desktop {
+                    left: 80%;
                 }
             }
 
@@ -284,16 +292,24 @@
         padding: 2rem 2rem;
         color: @dark;
 
-        @media @tablet{
+        @media @tablet {
+            padding: 4rem 4rem;
             display: block;
+            height: auto;
+        }
 
-            p {
-                margin: 4rem auto;
+        @media @desktop {
+            padding: 4rem 4rem;
+        }
+
+        p{
+
+            @media @tablet {
                 color: white;
                 text-shadow: @txtShadow;
+                margin: 4rem auto;
             }
         }
-        @media @desktop{display: block; height: auto;}
     }
 
     .two{
@@ -337,17 +353,16 @@
 
 .mobileApp {
     display: flex;
-    justify-content: space-evenly;
     padding: 4rem 0 8rem;
 
     @media @tablet {
         width: 88%;
         margin: 0 auto;
-        justify-content: space-between;    
+        justify-content: space-evenly;
     }
 
     @media @desktop{
-        justify-content: space-evenly;
+        
     }
 
     div {
