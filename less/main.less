@@ -181,6 +181,7 @@
         margin: 0 auto;
     }
 
+
     .findContainer{
         display: flex;
         flex-direction: column;
@@ -196,8 +197,16 @@
             margin: 0 auto;
             align-self: center;
 
+            @media @tablet{
+                width: 49%;
+            }
+
             img{                
                 width: 100%;
+
+                @media @tablet{
+                    width: 85%;
+                }
             }
             
             .priceBox{
